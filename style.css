@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  width: 100%;
+  height: auto;
+  background-color: #1f2125ff;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.ads {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 40px;
+
+}
+.ads_title {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #cedff6;
+  margin-bottom: 20px;
+}
+.ads_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  color: #989ca2;
+  margin-bottom: 20px;
+}
+.ads_text {
+  width: 50%;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ads_navigation_list {
+  width: 50%;
+  height: 70px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #212428;
+  border-radius: 5px;
+  box-shadow: -2px -5px 10px 0px #6d6d6d26;
+}
+.ads_navigation_item {
+  width: 15%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ads_navigation_item:hover {
+  background-color: red;
+  border-radius: 5px;
+}
+.ads_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+}
+.ads_list_item {
+  width: 23%;
+  border-radius: 10px;
+  box-shadow: -4px 4px 18px 0px #0000006e;
+  background-color: #23252b;
+  position: relative;
+}
+.ads_list_item_banner {
+  position: absolute;
+  top: 20px;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-size: 16px;
+  background-color: #212428;
+  color: white;
+}
+.ads_list_item_banner img {
+  max-height: 100%;
+  width: 40%;
+}
+.ads_list_item_banner p{
+    width: 60%;
+    text-align: center;
+}
+.ads_list_item_title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  padding: 6px;
+}
+.ads_list_item_button{
+    border: 1px solid #FF014F;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius:30px;
+    background-color: #23252AFF;
+    color:white;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+@media only screen and (max-width: 900px) {
+    .ads_list{
+        justify-content: space-evenly;
+    }
+	.ads_list_item{
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+   .ads_text{
+    font-size: 14px;
+   }
+}
+@media only screen and (max-width: 550px) {
+    .ads_text{
+     font-size: 12px;
+    }
+    .ads_list_item{
+        width: 48%;
+    }
+    .ads_wrapper{
+        align-items:center;
+    }
+ }
